@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <service android:name=".service.MuzikService" />
+        <service android:name=".service.CounterIntentService" />
     </application>
 
 </manifest>

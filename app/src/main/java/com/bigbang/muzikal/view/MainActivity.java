@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.bigbang.muzikal.R;
+import com.bigbang.muzikal.service.CounterIntentService;
 import com.bigbang.muzikal.service.MuzikService;
 
 import butterknife.BindView;
@@ -69,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+
+        startService(new Intent(this, CounterIntentService.class));
         //How to start a service
         Intent serviceIntent = new Intent(this, MuzikService.class);
 //        startService(serviceIntent);
